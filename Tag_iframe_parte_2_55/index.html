@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        iframe{
+            width: 500px;
+            height: 300px;
+            border: none;
+        }
+        #banner{
+            width: 500px;
+            height: 100px;
+            border: none;
+        }
+    </style>
+    <script>
+        function trocaBanner(){
+            var num=Math.floor(Math.random()*3);
+            var imgs=['b1.jpg','b2.jpg','b3.jpg'];
+            Document.getElementById("banner").src=imgs[num];
+        }
+        function iniciar(){
+            trocaBanner();
+        }
+        window.addEventListener("load",iniciar);
+    </script>
+    <title>tag iframe - parte 1</title>
+</head>
+<body>
+    <iframe src=""name="banner"id="banner"></iframe>
+    <br>
+
+    <a href="index33.html" target="main">aula33</a>
+
+
+
+    <iframe src=""name="main"></iframe>
+    
+</body>
+</html>

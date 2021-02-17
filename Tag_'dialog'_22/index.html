@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag dialog</title>
+    <script>
+        function abrirDialog() {
+            document.getElementById("d1").setAttribute("open", "");
+        }
+        function fecharDialog() {
+            document.getElementById("d1").setAttribute("open");
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+    <dialog id="d1" open="o browser não abre">
+        <p><dfn>HTML</dfn> hypertext markup languagem é um linguagem de marcação utilizada na construção de páginas na web.</p>
+
+        <p><dfn title="linguagem de marcação para web">CSS</dfn> cascading style sheets recurso para adicionar esilo/formatações a um documento web.</p>
+    </dialog><!--a tag dialog serve para abrir uma caixa de dialogo ja pre pronta e formatada.-->
+    
+</body>
+</html>

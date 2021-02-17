@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag 'AREA' & 'MAPA'</title>
+</head>
+<body>
+    <img src="mapa.png" usemap="#mapaBrasil"alt="mapa"><!--essa tag faz a inserção de uma imagem-->
+
+    <map name="mapaBrasil">
+        <area shape="poly"href="#" alt="minas gerais" coords="579,645,581,633,590,623,612,613,665,599,671,552, 689,517, 701,526, 741,506, 754,509, 764,522, 810,540, 808,553, 827,589, 836,605, 813,612, 816,638, 795,660, 792,675, 778,697, 684,720, 682,685, 670,683, 662,649, 619,656, 618,647, 593,642, 579,645" ><!--a tag 'map tem o display none, é contido dentro da tag map só funciona dentro da tag map.o parametro shape informa o tipo de forma do mapa que é: rect, circle ou poly-->
+        <area shape="rect" coords="" href="#" alt="">
+    </map>
+    
+</body>
+</html>

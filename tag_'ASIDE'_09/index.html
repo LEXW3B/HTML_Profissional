@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag 'ASIDE'</title>
+    <style>
+        aside.propaganda {
+            display:block;
+            border: 2px solid #000;
+            width: 90px;
+            height: auto;
+            padding: 15px;
+            text-align: center;
+        }
+        aside.menu {
+            position: relative;
+            border: 2px solid #000;
+            width: 90px;
+            height: 150px;
+            text-align: center;
+            float: right;
+            background-color: rgb(158, 161, 160);
+            top: -65vh;
+            border-radius: 15px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <aside></aside><!--e uma tag da nova semantica, e tem o display block.e uma seção de conteudo relacionado ao coteudo principal da pagina. Ela e boa para por colunas de menus e tambem propagandas-->
+    <aside>
+        <h1>tag 'aside'</h1>
+        <p>curso de html_5 gratis e profissional.</p>
+    </aside>
+    <aside class="propaganda">
+        <p>Propagandas</p>
+        <img id="foto"src="youtube-capa.jpg" alt="youtube"width="90px"height="90px">
+        <a href="www.youtube.com.br" >youtube</a>
+        <img src="new-google-favicon-logo.png" alt="google"width="90px"height="90px">
+        <a href="www.google.com.br" >google</a>
+        <img src="linkedin.png" alt="linkedin"width="90px"height="90px">
+        <a href="www.linkedin.com">linkedin</a>
+    </aside>
+    
+    <aside class="menu">
+        <h1>MENU</h1>
+        <a href="www.youtube.co.br">youtube</a>
+        <a href="www.google.com.br">google</a>
+        <a href="www.linkedin.com">linkedin</a>
+
+    </aside>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag div P2</title>
+    <style>
+        body {
+            
+            margin: 0px;
+        }
+        *{  padding: 0px;
+            box-sizing: border-box;/*o asterixo significa 'TODOS OS ELEMENTOS'*/
+        }
+        .main{
+            border: 1px dotted #f00;
+            margin: auto;
+            width: 960px;
+        }
+        #cabecalho,#corpo,#rodape{
+            border: 1px dotted rgb(185, 183, 183);
+
+        }
+        #cabecalho{
+           position: absolute;
+           top:0px ;/*controla o eixo 'Y'*/
+           left:0px ;/*controla o eixo 'X'*/
+           right:none ;/*controla o eixo 'X'*/
+           bottom:none ;/*controla o eixo 'Y'*/
+           width: 100%;/*controla a largura*/
+           height: 100px;/*controla a altura*/
+        }
+        #corpo{
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 570px;
+        }
+        #caixa1,#caixa2,#caixa3{
+            width: 150px;
+            height: 70;
+        }
+        #caixa1{
+            position: absolute;
+            top: 0px;
+            left: 24px;
+            background-color: #f00;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa2{
+            position: relative;
+            top: 0px;
+            left: 149px;
+            background-color: #0f0;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa3{
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            background-color: #f00;
+            color: #00f;
+            border: 1px solid #000;
+            z-index: 100;
+        }
+        #rodape{
+            position: absolute;
+            top: 670px;
+            left: 0px;
+            width: 100%;
+            height: 90px;
+            background-color: black;
+            color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+        <div class="main">
+            <h1>Cursos</h1>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div class="main">
+            <div id="caixa1"><h3>caixa1</h3></div>
+
+            <div id="caixa2"><h3>caixa2</h3></div>
+
+            <div id="caixa3"><h3>caixa3</h3></div>
+            
+            <p>nesta aula vamos aprender a manipular divs, usando position, top, width, left, height.</p>
+
+            <p>se ainda nao for inscrito no canal,inscreva-se e click no sininho.</p>
+
+            <p>siga-nos nas nossas redes sociais, endereço na descrição do video.</p>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="main">
+            <p>https://www.youtube.com/watch?v=CQf4QTGDwvw&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=25</p>
+            <p>cursos.com</p>
+        </div>
+    </div>
+    
+</body>
+</html>

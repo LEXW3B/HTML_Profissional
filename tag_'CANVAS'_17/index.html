@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag 'CANVAS'</title>
+    <style>
+        canvas {
+            border: 1px black solid;
+        }
+    </style>
+    <script>
+        function desenha() {
+            var canvas=document.getElementById('telaDesenho');
+            var ctx=canvas.getContext('2d');
+            ctx.fillRect(25, 25, 100, 100);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="telaDesenho" width="500px" height="500px">
+        seu browser não tem suporte ao canvas.
+    </canvas><!--elementos do canvas so sao manipulados atraves do css e javascript.-->
+    <script>desenha();</script>
+    
+</body>
+</html>

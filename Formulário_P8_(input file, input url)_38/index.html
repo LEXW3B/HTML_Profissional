@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário P8 (input file, input url)</title>
+    <style>
+        .quebra{display: block;}
+        .espaco{margin-bottom: 15px;}
+        .espaco_t{
+            margin: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="GET" enctype="multipart/form-data">
+
+        <!--file:
+        
+        multiple (BOOLEAN)
+        accept = ".doc, .docx"
+        accept = "application/msword"
+        accept = "image/*, .pdf"
+        accept = "jpg, .gif, .png"
+    
+        url
+    
+        placeholder = "http://cfbcursos.com.br"
+        pattern = "http://.*"-->
+
+        <label class="quebra">Selecione o arquivo</label>
+        <input type="file" name="f_arquivo" accept=".jpg,.gif,.png" multiple> 
+
+        <label class="quebra">Digite o URL:</label>
+        <input type="url" name="f_url" > 
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar" id="">
+
+    </form>
+
+    </form>
+    
+</body>
+</html>

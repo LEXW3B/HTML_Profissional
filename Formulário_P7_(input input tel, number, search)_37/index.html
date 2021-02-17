@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário P7 (input input tel, number, search) - Curso de HTML Completo e Profissional #37</title>
+    <style>
+        .quebra{display: block;}
+        .espaco{margin-bottom: 15px;}
+        .espaco_t{
+            margin: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="GET">
+
+        <label class="quebra">Senha:</label>
+        <input type="password" name="f_senha" pattern="[a-zA-Z0-9]{5}" placeholder=""> 
+
+        <label class="quebra">Telefone</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+
+        <label class="quebra espaco-t">Escolha um numero</label>
+        <input type="number" name="f_numero" step="2" min="0" max="10" >
+
+        <label class="quebra espaco-t">Pesquisa</label>
+        <input type="search" name="f_pesquisa" >
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar" id="">
+
+        <input type="hidden" name="Canal" value="LEXWEB" >
+        <input type="hidden" value="HTML5" name="Cursos">
+    </form>
+
+    </form>
+    
+</body>
+</html>

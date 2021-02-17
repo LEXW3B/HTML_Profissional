@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags code e pre</title>
+    <style>
+        pre {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <p>o segmento do codigo a seguir representa o corppo basico de um programa em C.</p>
+    <pre>
+    <code>
+        #include &lsaquo;stdio.h&rsaquo;
+        #include &lsaquo;stdlib.h&rsaquo;
+        #include &lsaquo;locale.h&rsaquo;
+
+        int main () {
+
+            setlocale(LC_ALL"Portuguese");
+            printf("codigo basico em C");
+            system("pause");
+
+            return 0;
+        }
+    </code><!--tag code display inline, serve para representar um trecho de codigo."CODE TEM QUE FICAR DENTRO DE PRE"-->
+</pre><!--display block, tag pre serve para mostrar o codigo da tag code do jeito que foi feito, ou seja. com indentação, espaços enters, tudo que foi formatado vai ficar do mesmo jeito na pagina."CODE TEM QUE FICCAR DENTRO DE PRE"-->
+    <p>os cabeçalhos utilizados podem variar de acordo com os recursos que deseja utilizar no programa, então, stdlib e locale podem ser omitidos com parte do codigo base, assim como a função setlocale.</p>
+    
+</body>
+</html>
